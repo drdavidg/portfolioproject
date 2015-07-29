@@ -1,0 +1,65 @@
+.logo {
+  /* Oval 85: */
+  background: #4387C5;
+  border: 3px solid #4387C5;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 10px;
+  float: left;
+}
+.top-navigation {
+  margin: 20px auto;
+  width: 60%;
+  position: fixed;
+}
+.content {
+  width: 100%;
+  background-color: white;
+}
+.seatlistbutton {
+    /* Rectangle 17: */
+  background: #4387C5;
+  border: 3px solid #4387C5;
+  border-radius: 4px;
+  /* List your seat: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 17px;
+}
+.seatlistbutton:hover {
+  background: blue;
+  border: 3px solid blue;
+  cursor: pointer;
+}
+nav ul {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+.links, .seatlistbutton {
+  float: right;
+}
+.links > li {
+  display: inline;
+}
+nav .rightside > .links > li {
+  /* Log In: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 18px;
+  color: #4387C5;
+  line-height: 17px;
+}
+nav .rightside > .links > li:hover {
+    color: blue;
+    cursor: pointer;
+}
+.hero {
+  background-image: url('../img/heroimage.png');
+  background-repeat: no-repeat;
+  background-position: 0 -32px;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 735px;
+}
