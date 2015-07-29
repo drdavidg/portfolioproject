@@ -91,7 +91,7 @@ nav .content > .links > li, nav .content > .links > button {
   text-align: center;
 
 }
-.hero h2 {
+.hero h3 {
     /* Find seats on demand: */
   font-family: .HelveticaNeueDeskInterface-Regular;
   font-size: 19.84px;
@@ -118,6 +118,10 @@ nav .content > .links > li, nav .content > .links > button {
   margin: 0 auto;
   padding: 10px 30px;
 }
-.feature-terms {
-  
+.feature-terms div h2 {
+  text-transform: uppercase;
+}
+.feature-terms div h4 {
+  color: #333333;
+  font-weight: 200;
 }
