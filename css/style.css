@@ -1,20 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 .logo {
   /* Oval 85: */
   background: #4387C5;
   border: 3px solid #4387C5;
   border-radius: 50%;
-  padding: 10px;
-  font-size: 10px;
+  font-size: 20px;
   float: left;
-}
-.top-navigation {
-  margin: 20px auto;
-  width: 60%;
-  position: fixed;
+  display: inline;
+  padding: 20px;
 }
 .content {
-  width: 100%;
+  margin: 20px auto;
+  width: 60%;
+}
+.top-navigation {
   background-color: white;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  margin: 0 auto;
 }
 .seatlistbutton {
     /* Rectangle 17: */
@@ -32,34 +44,77 @@
   border: 3px solid blue;
   cursor: pointer;
 }
-nav ul {
-  display: inline;
-  list-style-type: none;
-  padding: 0;
-}
-.links, .seatlistbutton {
+.top-navigation .content ul li, .top-navigation .content ul button {
+  display: inline-block;
   float: right;
 }
-.links > li {
-  display: inline;
+.links {
+  /*padding: 20px 0;*/
+  margin: 0 auto;
 }
-nav .rightside > .links > li {
+nav .content > .links > li {
   /* Log In: */
   font-family: .HelveticaNeueDeskInterface-Regular;
   font-size: 18px;
   color: #4387C5;
   line-height: 17px;
 }
-nav .rightside > .links > li:hover {
+nav .content > .links > li, nav .content > .links > button {
+    padding: 10px;
+    margin: 25px;
+}
+.top-navigation .content > .links > li:hover {
     color: blue;
     cursor: pointer;
 }
 .hero {
   background-image: url('../img/heroimage.png');
   background-repeat: no-repeat;
-  background-position: 0 -32px;
+  /*background-position: 0 -32px;*/
   background-size: cover;
   width: 100%;
   margin: 0 auto;
   height: 735px;
+  display: block;
+}
+.hero-content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 300px 0;
+}
+.hero h1 {
+  /* Find and book a salo: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 48px;
+  color: #F1F1F1;
+  line-height: 56px;
+  text-align: center;
+
+}
+.hero h2 {
+    /* Find seats on demand: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 19.84px;
+  color: #FFFFFF;
+  line-height: 23px;
+  text-align: center;
+  font-weight: 200;
+}
+.btn-location {
+  width: 50%;
+  margin: 0 auto;
+}
+.btn-text {
+  /* Rectangle 17: */
+  background: #FFFFFF;
+  border: 3px solid #4387C5;
+  /* City or Zip: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 16.23px;
+  color: #A4BDD4;
+  line-height: 19px;
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
