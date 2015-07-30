@@ -28,23 +28,28 @@ html {
   position: fixed;
   margin: 0 auto;
 }
-.seatlistbutton {
+.btn-seat-list {
     /* Rectangle 17: */
   background: #4387C5;
   border: 3px solid #4387C5;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   /* List your seat: */
   font-family: .HelveticaNeueDeskInterface-Regular;
   font-size: 14px;
   color: #FFFFFF;
   line-height: 17px;
+  height: 44px;
+  width: 253px;
+  position: relative;
+  right: 1px;
+  top: -1px;
 }
-.seatlistbutton:hover {
+.btn-seat-list:hover {
   background: blue;
   border: 3px solid blue;
   cursor: pointer;
 }
-.top-navigation .content ul li, .top-navigation .content ul button {
+.top-navigation .content ul li {
   display: inline-block;
   float: right;
 }
@@ -101,8 +106,9 @@ nav .content > .links > li, nav .content > .links > button {
   font-weight: 200;
 }
 .btn-location {
-  width: 50%;
+  width: 63%;
   margin: 0 auto;
+  text-align: center;
 }
 .btn-text {
   /* Rectangle 17: */
@@ -110,18 +116,39 @@ nav .content > .links > li, nav .content > .links > button {
   border: 3px solid #4387C5;
   /* City or Zip: */
   font-family: .HelveticaNeueDeskInterface-Regular;
-  font-size: 16.23px;
+  font-size: 16px;
   color: #A4BDD4;
-  line-height: 19px;
+  line-height: 17px;
   text-align: center;
   display: inline;
   margin: 0 auto;
   padding: 10px 30px;
 }
-.feature-terms div h2 {
+.features, .grid {
+  width: 100%;
+}
+.features .top-row div, features .second-row div {
+
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row {
+  float:left;
+  display: block;
+  width: 30%;
+}
+.second-row {
+  float: left;
+  display: block;
+  width: 30%;
+}
+.features div h2 {
   text-transform: uppercase;
 }
-.feature-terms div h4 {
+.features div h4 {
   color: #333333;
   font-weight: 200;
 }
